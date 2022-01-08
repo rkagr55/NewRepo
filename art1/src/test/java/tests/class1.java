@@ -28,7 +28,7 @@ public class class1 {
       Thread.sleep(5000);
       
       File srcPath = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-      File destPath = new File("snap.png");
+      File destPath = new File("target/snap.png");
       FileHandler.copy(srcPath, destPath);
       
       driver.quit();
